@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Spartan:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+h1 {
+    font-size: 50px;
+    line-height: 70px;
+    color: #d1dae2;
+
+}
+h2 {
+    font-size: 30px;
+    line-height: 80px;
+    color: rgb(66, 198, 73);
+}
+h3 {
+    font-size: 20px;
+    line-height: 80px;
+    color: rgb(20, 190, 220);
+}
+ body{
+    width: 100%;
+ }
+#effect{
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #27c5d6;
+}
+#texteffect {
+position: relative;
+letter-spacing: 4px;
+overflow: hidden;
+background: linear-gradient(100deg,#777,#999,#444);
+background-repeat:no-repeat ;
+background-size: 100%;
+}
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* san pham */ 
+
+#product1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background:#cce7d0;
+}
+
+#product1 .pro {
+  width: 22%;
+  min-width: 300px;
+  padding: 20px 12px;
+  margin: 20px 20px;
+  border: 1px solid #eaf0eb;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+  position: relative;
+}
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  
+}
+
+#product1 .pro img {
+  width: 100%;
+  
+}
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: #606063;
+  font-size: 12px;
+}
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+#product1 .pro .des i {
+  font-size: 12px;
+  color: rgba(243, 181, 25);
+}
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: yellowgreen;
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+}
+
+    
+
+
+/* footer*/
+ footer {
+    width: 100%;
+    background-color: #939393; /* Màu nền xám */
+    color: #ffffff; /* Màu chữ trắng */
+    padding: 30px; /* Khoảng cách lề */
+    height: 400px; /* Đặt chiều cao của footer là 350px */
+}
+
+/* Phần đỉnh của footer */
+footer .top {
+
+    align-items: center; /* Căn các phần tử theo chiều dọc */
+    justify-content: center; /* Căn các phần tử theo chiều ngang */
+}
+
+footer .top img {
+    width: 50px; /* Đặt chiều rộng của logo */
+    
+    padding-right: 30%;
+}
+
+footer .company-name {
+    font-weight: bold; /* Chữ in đậm */
+    font-size: 30px; /* Kích thước chữ */
+}
+
+/* Phần dưới của footer */
+footer .bottom {
+    display: flex; /* Hiển thị các phần tử theo chiều ngang */
+
+    padding-top: 20px;
+    padding-left: 30px;
+
+    justify-content: space-around; /* Canh các phần tử theo hai bên */
+}
+ .left-column p{
+    margin-bottom: 15px;
+ }
+
+
+
+.footer .right-column {
+    display: flex; /* Hiển thị các phần tử theo chiều ngang */
+    flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+    align-items: center; /* Căn các phần tử theo chiều ngang */
+    padding-left: 40px;
+    margin: 40px; /* Khoảng cách lề */
+    width: 70%; /* Đặt chiều rộng */
+    height: 100%; /* Chiều cao */
+    align-items: center; /* Căn các phần tử theo chiều ngang */
+}
+
+.footer-map {
+    display: flex; /* Hiển thị các phần tử theo chiều ngang */
+    width: 100%; /* Chiều rộng */
+    height: 100%; /* Chiều cao */
+    margin-bottom: 30px; /* Đặt margin-bottom tự động */
+    margin-top: 30px; /* Đặt margin-top tự động */
+}
+
+.left-column {
+    margin-right: 10px; /* Đặt margin-right tự động */
+    align-items: center; /* Căn các phần tử theo chiều ngang */
+    padding:20px;
+}
+
+
+.right-column {
+        transform: scale(125%); 
+        padding-right: 80px;
+        padding-top: 20px;
+       
+}
+    
